@@ -16,7 +16,7 @@ News Radar is a dynamic news website that provides users with up-to-date news ac
 -**JavaScript**: Functionality and interaction.
 -**News API**: Fetching real-time news articles.
 
-
+## Website Snippet
 ![image](https://github.com/user-attachments/assets/c7787a3d-d0bb-4b4d-be60-7fcc6707cb31)
 
   
