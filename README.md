@@ -9,7 +9,8 @@ News Radar is a dynamic news website that provides users with up-to-date news ac
 - **Search Functionality**: A search bar allows users to search for specific news articles.
 - **Refresh Button**: Clicking on the "News Radar" logo refreshes the page, ensuring users get the latest news updates.
 - **Responsive Design**: The website is designed to be responsive, providing a seamless experience on both desktop and mobile devices.
-
+- **Toggle Mode**: Implemented Light/Dark Mode Toggle to enhnace user experience.
+- **Bookmarking Articles**: Added News Article Bookmarking feature using Local Storage for users to save articles for later reading
 ## Technology Stack
 -**HTML**: Structure of the web pages.
 -**CSS**:  Styling and layout of the website
@@ -17,6 +18,6 @@ News Radar is a dynamic news website that provides users with up-to-date news ac
 -**News API**: Fetching real-time news articles.
 
 ## Website Snippet
-![image](https://github.com/user-attachments/assets/c7787a3d-d0bb-4b4d-be60-7fcc6707cb31)
+![image](https://github.com/user-attachments/assets/d93913ad-7899-4f74-84c6-d9dfc7da8a7b)
 
   
