@@ -176,16 +176,48 @@ main {
     margin-left:2px;
     font-family: "Roboto", sans-serif;
 }
-#bookmarked-cards-container{
-    background-color: var(--accent-color);
-    color: white;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left:2px;
-    font-family: "Roboto", sans-serif;
+/* Container that holds all bookmark cards */
+#bookmarked-cards-container {
+  display: flex;        
+  flex-wrap: wrap;           
+  gap: 16px;                 
+  justify-content: flex-start; 
+  padding: 10px;             
+  overflow-x: auto;          
 }
+
+/* Individual bookmark card styling */
+#bookmarked-cards-container .card {
+  flex: 0 0 calc(33.33% - 16px); 
+  box-sizing: border-box;     
+  border: 1px solid #ccc;   
+  border-radius: 6px;         
+  background: #fff;           
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card hover effect */
+#bookmarked-cards-container .card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Card image */
+#bookmarked-cards-container .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* Card content */
+#bookmarked-cards-container .card-content {
+  flex: 1;
+}
+
 .bookmark-button {
   background-color: transparent;
   border: 1px solid #555;
@@ -203,7 +235,7 @@ main {
 }
 
 .bookmark-button.bookmarked {
-  background-color: #4caf50;
+  background-color: #4caf50; 
   color: white;
   border-color: #4caf50;
 }
