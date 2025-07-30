@@ -1,4 +1,4 @@
-/ For extracting news
+// For extracting news
 const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => {
