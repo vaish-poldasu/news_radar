@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewsRadar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <nav>
         <div class="main-nav container flex">
             <a href="#" onclick="reload()" class="company-logo">
@@ -21,12 +20,12 @@
                     <li class="hover-link nav-item" id="health" onclick="onNavItemClick('health')">Health</li>
                     <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
                     <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
-                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('Technology')">Technology</li>
-                    <li class="hover-link nav-item" id ="bookmark"onclick="viewBookmarks()">Bookmarks</li> 
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="bookmark" onclick="viewBookmarks()">Bookmarks</li> 
                 </ul>
             </div>
             <div class="search-bar flex">
-                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science" />
                 <button id="search-button" class="search-button">Search</button>
             </div>
             <div class="theme-toggle">
@@ -34,11 +33,10 @@
             </div>
         </div>
     </nav>
-    
 
     <main>
         <div class="cards-container container flex" id="cards-container">
-            
+            <!-- News cards will be injected here -->
         </div>
         <div class="bookmarks-container container flex" id="bookmarks-container" style="display: none;">
             <h2>Your Bookmarked Articles</h2>
@@ -51,12 +49,15 @@
     <template id="template-news-card">
         <div class="card">
             <div class="card-header">
-                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" class="news-img" />
             </div>
             <div class="card-content">
-                <h3 id="news-title">This is the Title</h3>
-                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
-                <p id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+                <h3 class="news-title">This is the Title</h3>
+                <h6 class="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis
+                    voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!
+                </p>
                 <button class="bookmark-button">🔖 Bookmark</button> <!-- Bookmark Button -->
             </div>
         </div>
